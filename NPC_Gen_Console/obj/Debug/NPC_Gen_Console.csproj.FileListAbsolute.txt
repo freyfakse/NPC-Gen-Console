@@ -1,0 +1,7 @@
+C:\Users\Jonas\source\repos\NPC_Gen_Console\NPC_Gen_Console\bin\Debug\NPC_Gen_Console.exe.config
+C:\Users\Jonas\source\repos\NPC_Gen_Console\NPC_Gen_Console\bin\Debug\NPC_Gen_Console.exe
+C:\Users\Jonas\source\repos\NPC_Gen_Console\NPC_Gen_Console\bin\Debug\NPC_Gen_Console.pdb
+C:\Users\Jonas\source\repos\NPC_Gen_Console\NPC_Gen_Console\obj\Debug\NPC_Gen_Console.csprojAssemblyReference.cache
+C:\Users\Jonas\source\repos\NPC_Gen_Console\NPC_Gen_Console\obj\Debug\NPC_Gen_Console.csproj.CoreCompileInputs.cache
+C:\Users\Jonas\source\repos\NPC_Gen_Console\NPC_Gen_Console\obj\Debug\NPC_Gen_Console.exe
+C:\Users\Jonas\source\repos\NPC_Gen_Console\NPC_Gen_Console\obj\Debug\NPC_Gen_Console.pdb
