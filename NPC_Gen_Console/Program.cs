@@ -9,20 +9,40 @@ namespace NPC_Gen_Console
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
+            XmlDocument firstnamesKannamereXML = new XmlDocument();
+            firstnamesKannamereXML.Load("firstnames, Kannamere.xml");
+            XmlDocument firstnamesHerzamarkXML = new XmlDocument();
+            firstnamesHerzamarkXML.Load("firstnames, Herzamark.xml");
+            XmlDocument firstnamesStavroXML = new XmlDocument();
+            firstnamesStavroXML.Load("firstnames, Stavro.xml");
+            XmlDocument firstnamesZolbonneXML = new XmlDocument();
+            firstnamesZolbonneXML.Load("firstnames, Zolbonne.xml");
+
+            XmlDocument lastnamesKannamereXML = new XmlDocument();
+            lastnamesKannamereXML.Load("lastnames, Kannamere.xml");
+            XmlDocument lastnamesHerzamarkXML = new XmlDocument();
+            lastnamesHerzamarkXML.Load("lastnames, Herzamark.xml");
+            XmlDocument lastnamesStavroXML = new XmlDocument();
+            lastnamesStavroXML.Load("lastnames, Stavro.xml");
+            XmlDocument lastnamesZolbonneXML = new XmlDocument();
+            lastnamesZolbonneXML.Load("lastnames, Zolbonne.xml");
+
             Console.WriteLine("Hello World!");
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.LoadXml("<user name=\"John Doe\" age=\"42\" name=\"Jane Doe\" age=\"31\">></user>");
-            if (xmlDoc.DocumentElement.Attributes["name"] != null)
-                Console.WriteLine(xmlDoc.DocumentElement.Attributes["name"].Value);
-            if (xmlDoc.DocumentElement.Attributes["age"] != null)
-                Console.WriteLine(xmlDoc.DocumentElement.Attributes["age"].Value);
+
+            //Console.WriteLine(firstnamesKannamereXML.DocumentElement.ChildNodes[0].ChildNodes[0].Attributes["name"].Value);
+
+            
+            Console.WriteLine(firstnamesKannamereXML.DocumentElement.ChildNodes[0].Attributes["name"].Value +" " 
+                + firstnamesKannamereXML.DocumentElement.ChildNodes[0].Attributes["sex"].Value +" " 
+                + firstnamesKannamereXML.DocumentElement.ChildNodes[0].Attributes["is_used_before"].Value);
+                
             Console.ReadKey();
 
             // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
         }
+        
     }
 }

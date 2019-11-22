@@ -1,0 +1,11 @@
+<?xml version = "1.0"?>
+<names>
+	<node name="francois" sex="m" is_used_before="false">
+	</node>
+
+	<node name="Macy" sex="m" is_used_before="false">
+	</node>
+
+	<node name="Oriel" sex="m" is_used_before="false">
+	</node>
+</names>
