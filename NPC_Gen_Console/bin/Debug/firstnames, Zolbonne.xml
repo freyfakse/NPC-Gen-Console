@@ -8,4 +8,67 @@
 
 	<node name="Oriel" sex="m" is_used_before="false">
 	</node>
+
+	<node name="Marlon" sex="m" is_used_before="false">
+	</node>
+
+	<node name="Chantal" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Musetta" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Cerise" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Dior" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Algernon" sex="m" is_used_before="false">
+	</node>
+
+	<node name="Courvoisier" sex="m" is_used_before="false">
+	</node>
+
+	<node name="Fleur" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Eloise" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Evonne" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Ivonne" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Gaston" sex="m" is_used_before="false">
+	</node>
+
+	<node name="Jaques" sex="m" is_used_before="false">
+	</node>
+
+	<node name="Lunette" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Mallory" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Mauve" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Marcell" sex="m" is_used_before="false">
+	</node>
+
+	<node name="Severin" sex="m" is_used_before="false">
+	</node>
+
+	<node name="Renee" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Zanette" sex="f" is_used_before="false">
+	</node>
+
+	<node name="Vernon" sex="m" is_used_before="false">
+	</node>
 </names>

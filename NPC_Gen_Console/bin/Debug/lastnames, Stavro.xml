@@ -8,4 +8,31 @@
 
 	<node name="Velky" is_used_before="false">
 	</node>
+
+	<node name="Sekelsky" is_used_before="false">
+	</node>
+
+	<node name="Telep" is_used_before="false">
+	</node>
+
+	<node name="Kobliska" is_used_before="false">
+	</node>
+
+	<node name="Dulik" is_used_before="false">
+	</node>
+
+	<node name="Kasckak" is_used_before="false">
+	</node>
+
+	<node name="Spiva" is_used_before="false">
+	</node>
+
+	<node name="Sofka" is_used_before="false">
+	</node>
+
+	<node name="Petska" is_used_before="false">
+	</node>
+
+	<node name="Kriska" is_used_before="false">
+	</node>
 </names>

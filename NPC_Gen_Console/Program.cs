@@ -13,6 +13,7 @@ namespace NPC_Gen_Console
         {
             Class1 c1 = new Class1();
 
+            Console.WriteLine("Press any key to close program.");
             Console.ReadKey();
         }
         
