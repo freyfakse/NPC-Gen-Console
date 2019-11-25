@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Xml;
 
 namespace NPC_Gen_Console
@@ -18,14 +18,13 @@ namespace NPC_Gen_Console
         XmlDocument lastnamesStavroXML = new XmlDocument();
         XmlDocument lastnamesZolbonneXML = new XmlDocument();
 
+        int i_selectedFirstnameNode;
+        int i_selectedLastnameNode;
         int i_stepCount = 0; //"state machine", ensures program doesn't continue before each step is correct.
 
-        List<string> li_npcInput = null;
-
-        public Class1()
+        public Class1() //Constructor
         {
-            LoadXMLFiles();
-
+            LoadXMLFiles(); //loads the actual XML docs into memory.
 
             Console.WriteLine("Welcome to NPC Gen, console version.");
 
@@ -33,11 +32,14 @@ namespace NPC_Gen_Console
             {
                 MainLoop();
             }
-            
         }
 
         public void MainLoop()
         {
+            List<string> li_npcInput = null;
+
+            XmlDocument pointerFirstname = new XmlDocument();
+            XmlDocument pointerLastname = new XmlDocument();
 
             while (i_stepCount == 0)
             {
@@ -46,71 +48,61 @@ namespace NPC_Gen_Console
                 String str_npcInput = Console.ReadLine();
                 li_npcInput = str_npcInput.Split(',').ToList();
 
-                if (li_npcInput.Count == 3)
-                {
-                    if (li_npcInput[0] == "m" || li_npcInput[0] == "f")
-                    {
-                        if (li_npcInput[1] == "k" || li_npcInput[1] == "h" || li_npcInput[1] == "s" || li_npcInput[1] == "z")
-                        {
-                            if (li_npcInput[2] == "k" || li_npcInput[2] == "h" || li_npcInput[2] == "s" || li_npcInput[2] == "z")
-                            {
-                                i_stepCount = 1;
-                            }
-                            else { Console.WriteLine("Invalid surname origin, type (k)annamere, (h)erzamark, (s)tavro, or (z)olbonne."); }
-                        }
-                        else { Console.WriteLine("Invalid firstname origin, type (k)annamere, (h)erzamark, (s)tavro, or (z)olbonne."); }
-                    }
-                    else { Console.WriteLine("Invalid sex, type 'm' or 'f'."); }
-                }
-                else { Console.WriteLine("Error in input. Did you forget a comma?"); }
+                if (InputValidation(li_npcInput) == true) { i_stepCount = 1; }
+
+                if (li_npcInput[1].Equals("k")) {pointerFirstname = firstnamesKannamereXML;}
+                else if (li_npcInput[1].Equals("h")) {pointerFirstname = firstnamesHerzamarkXML;}
+                else if (li_npcInput[1].Equals("s")) {pointerFirstname = firstnamesStavroXML;}
+                else if (li_npcInput[1].Equals("z")) {pointerFirstname = firstnamesZolbonneXML;}
+
+                if (li_npcInput[2].Equals("k")) { pointerLastname= lastnamesKannamereXML; }
+                else if (li_npcInput[2].Equals("h")) { pointerLastname = lastnamesHerzamarkXML; }
+                else if (li_npcInput[2].Equals("s")) { pointerLastname = lastnamesStavroXML; }
+                else if (li_npcInput[2].Equals("z")) { pointerLastname = lastnamesZolbonneXML; }
             }
 
             while (i_stepCount == 1)
             {
-                if (li_npcInput[0].Equals("m")) { Console.WriteLine("test m"); }
-                else if (li_npcInput[0].Equals("m")) { Console.WriteLine("test f"); }
+                while (Firstname(pointerFirstname, li_npcInput[0]) == false)
+                { Firstname(pointerFirstname, li_npcInput[0]); }
 
-                if (li_npcInput[1].Equals("k"))
-                {
-                    while (Firstname(firstnamesKannamereXML, li_npcInput[0]) == false)
-                    { Firstname(firstnamesKannamereXML, li_npcInput[0]); }
-                }
-                else if (li_npcInput[1].Equals("h"))
-                {
-                    while (Firstname(firstnamesHerzamarkXML, li_npcInput[0]) == false)
-                    { Firstname(firstnamesHerzamarkXML, li_npcInput[0]); }
-                }
-                else if (li_npcInput[1].Equals("s"))
-                {
-                    while (Firstname(firstnamesStavroXML, li_npcInput[0]) == false)
-                    { Firstname(firstnamesStavroXML, li_npcInput[0]); }
-                }
-                else if (li_npcInput[1].Equals("z"))
-                {
-                    while (Firstname(firstnamesZolbonneXML, li_npcInput[0]) == false)
-                    { Firstname(firstnamesZolbonneXML, li_npcInput[0]); }
-                }
+                Lastname(pointerLastname);
 
-                if (li_npcInput[2].Equals("k")) { Lastname(lastnamesKannamereXML); }
-                else if (li_npcInput[2].Equals("h")) { Lastname(lastnamesHerzamarkXML); }
-                else if (li_npcInput[2].Equals("s")) { Lastname(lastnamesStavroXML); }
-                else if (li_npcInput[2].Equals("z")) { Lastname(lastnamesZolbonneXML); }
-
-                Console.WriteLine("Change names's ''used before'' status? (yy, yn, ny, nn)");
+                Console.WriteLine("Change names' ''used before'' status? (yy, yn, ny, nn)");
                 String str_saveInput = Console.ReadLine();
-                if (str_saveInput.Equals("yy")) { Console.WriteLine("test yy"); }//save first & last name
-                if (str_saveInput.Equals("yn")) { Console.WriteLine("test yn"); }//save first name
-                if (str_saveInput.Equals("ny")) { Console.WriteLine("test ny"); }//save last name
-                if (str_saveInput.Equals("nn")) { Console.WriteLine("test nn"); }//no save
+
+                SaveChangeToUsedBeforeFlag(pointerFirstname, pointerLastname, str_saveInput, li_npcInput);
 
                 i_stepCount = 0;
             }
+        }
+
+        public Boolean InputValidation(List<String> li_input)
+        {
+            if (li_input.Count == 3)
+            {
+                if (li_input[0] == "m" || li_input[0] == "f")
+                {
+                    if (li_input[1] == "k" || li_input[1] == "h" || li_input[1] == "s" || li_input[1] == "z")
+                    {
+                        if (li_input[2] == "k" || li_input[2] == "h" || li_input[2] == "s" || li_input[2] == "z")
+                        {
+                            return true;
+                        }
+                        else { Console.WriteLine("Invalid surname origin, type (k)annamere, (h)erzamark, (s)tavro, or (z)olbonne."); return false; }
+                    }
+                    else { Console.WriteLine("Invalid firstname origin, type (k)annamere, (h)erzamark, (s)tavro, or (z)olbonne."); return false; }
+                }
+                else { Console.WriteLine("Invalid sex, type 'm' or 'f'."); return false; }
+            }
+            else { Console.WriteLine("Error in input. Did you forget a comma?"); return false; }
         }
 
         public int RandomInt(int i_size)
         {
             Random rng = new Random();
             int i_randomInt = rng.Next(0, i_size);
+            Thread.Sleep(100);
             return i_randomInt;
         }
 
@@ -127,12 +119,28 @@ namespace NPC_Gen_Console
             lastnamesZolbonneXML.Load("lastnames, Zolbonne.xml");
         }
 
-        public void SaveChangeToUsedBeforeFlag(XmlDocument xmlDoc, int i_position)//Change & save the is_used_before flag to true.
+        public void SaveChangeToUsedBeforeFlag(XmlDocument firstName,XmlDocument lastName,String str_userSaveInput,List<String> li_npcInput2)//Change & save the is_used_before flag to true.
         {
-
+            
+            
+            if (str_userSaveInput.Equals("yy")) { Console.WriteLine("test yy"); SaveFirstname(firstName,li_npcInput2); }//save first & last name
+            else if (str_userSaveInput.Equals("yn")) { Console.WriteLine("test yn"); }//save first name
+            else if (str_userSaveInput.Equals("ny")) { Console.WriteLine("test ny"); }//save last name
+            else if (str_userSaveInput.Equals("nn")) { Console.WriteLine("test nn"); }//no save
         }
 
-        public Boolean Firstname(XmlDocument xmlDoc, String str_sex)
+        public void SaveFirstname(XmlDocument xmlDoc, List<String> li_npcInput3)
+        {
+            if (li_npcInput3[1].Equals("k"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("firstnames, Kannamere.xml");
+            }
+        }
+
+        public void SaveLastname() { }
+
+        public Boolean Firstname(XmlDocument xmlDoc, String str_sex)//returns bool due to sex checking
         {
             int i_randomlySelectedNode = RandomInt(xmlDoc.DocumentElement.ChildNodes.Count);
 
@@ -143,6 +151,7 @@ namespace NPC_Gen_Console
             if (xmlDoc.DocumentElement.ChildNodes[i_randomlySelectedNode].Attributes["sex"].Value.Equals(str_sex))
             {
                 Console.WriteLine("correct sex");
+                i_selectedFirstnameNode = i_randomlySelectedNode;
                 return true;
             }
             else { Console.WriteLine("wrong sex"); return false; }
@@ -154,6 +163,7 @@ namespace NPC_Gen_Console
 
             Console.WriteLine(xmlDoc.DocumentElement.ChildNodes[i_randomlySelectedNode].Attributes["name"].Value + " used before: "
                 + xmlDoc.DocumentElement.ChildNodes[i_randomlySelectedNode].Attributes["is_used_before"].Value);
+            i_selectedLastnameNode = i_randomlySelectedNode;
         }
     }
 
