@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<names>
+  <node name="Arjhan" sex="m" is_used_before="false">
+  </node>
+  <node name="Daar" sex="f" is_used_before="false">
+  </node>
+  <node name="Mishann" sex="f" is_used_before="false">
+  </node>
+  <node name="Balasar" sex="m" is_used_before="false">
+  </node>
+  <node name="Shamash" sex="m" is_used_before="false">
+  </node>
+  <node name="Akra" sex="f" is_used_before="false">
+  </node>
+  <node name="Kava" sex="f" is_used_before="false">
+  </node>
+  <node name="Medrash" sex="m" is_used_before="false">
+  </node>
+  <node name="Ghesh" sex="m" is_used_before="false">
+  </node>
+  <node name="Sora" sex="f" is_used_before="false">
+  </node>
+  <node name="Thava" sex="f" is_used_before="false">
+  </node>
+  <node name="Heskan" sex="m" is_used_before="false">
+  </node>
+  <node name="Nadarr" sex="m" is_used_before="false">
+  </node>
+  <node name="Biri" sex="f" is_used_before="false">
+  </node>
+  <node name="Raiann" sex="f" is_used_before="false">
+  </node>
+  <node name="Shamash" sex="m" is_used_before="false">
+  </node>
+  <node name="Rhogar" sex="m" is_used_before="false">
+  </node>
+  <node name="Korinn" sex="f" is_used_before="false">
+  </node>
+  <node name="J'heri" sex="f" is_used_before="false">
+  </node>
+  <node name="Shedinn" sex="m" is_used_before="false">
+  </node>
+</names>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<names>
+  <node name="Lortar" sex="m" is_used_before="false">
+  </node>
+  <node name="Abzug" sex="m" is_used_before="true">
+  </node>
+  <node name="Kansif" sex="f" is_used_before="false">
+  </node>
+  <node name="Ownka" sex="f" is_used_before="false">
+  </node>
+  <node name="Emen" sex="f" is_used_before="false">
+  </node>
+  <node name="Shugog" sex="m" is_used_before="false">
+  </node>
+  <node name="Sutha" sex="f" is_used_before="false">
+  </node>
+  <node name="Urzul" sex="m" is_used_before="true">
+  </node>
+  <node name="Myev" sex="f" is_used_before="false">
+  </node>
+  <node name="Ruhk" sex="m" is_used_before="false">
+  </node>
+  <node name="Mobad" sex="m" is_used_before="false">
+  </node>
+  <node name="Neega" sex="f" is_used_before="false">
+  </node>
+  <node name="Baggi" sex="f" is_used_before="false">
+  </node>
+  <node name="Shamog" sex="m" is_used_before="true">
+  </node>
+  <node name="Shautha" sex="f" is_used_before="false">
+  </node>
+  <node name="Mugrub" sex="m" is_used_before="true">
+  </node>
+  <node name="Ovak" sex="f" is_used_before="false">
+  </node>
+  <node name="Bajok" sex="m" is_used_before="false">
+  </node>
+  <node name="Vola" sex="f" is_used_before="false">
+  </node>
+  <node name="Rhorog" sex="m" is_used_before="false">
+  </node>
+  <node name="Jahrukk" sex="m" is_used_before="false">
+  </node>
+  <node name="Volen" sex="f" is_used_before="false">
+  </node>
+</names>

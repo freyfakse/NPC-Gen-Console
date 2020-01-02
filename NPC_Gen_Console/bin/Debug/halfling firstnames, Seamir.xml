@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<names>
+  <node name="Alton" sex="m" is_used_before="false">
+  </node>
+  <node name="Ander" sex="m" is_used_before="false">
+  </node>
+  <node name="Cade" sex="m" is_used_before="false">
+  </node>
+  <node name="Corrin" sex="m" is_used_before="false">
+  </node>
+  <node name="Eldon" sex="m" is_used_before="false">
+  </node>
+  <node name="Errich" sex="m" is_used_before="false">
+  </node>
+  <node name="Finnan" sex="m" is_used_before="false">
+  </node>
+  <node name="Garret" sex="m" is_used_before="false">
+  </node>
+  <node name="Lindal" sex="m" is_used_before="false">
+  </node>
+  <node name="Lyle" sex="m" is_used_before="false">
+  </node>
+  <node name="Merric" sex="m" is_used_before="false">
+  </node>
+  <node name="Perrin" sex="m" is_used_before="false">
+  </node>
+  <node name="Roscoe" sex="m" is_used_before="false">
+  </node>
+  <node name="Andry" sex="f" is_used_before="false">
+  </node>
+  <node name="Bree" sex="f" is_used_before="false">
+  </node>
+  <node name="Callie" sex="f" is_used_before="false">
+  </node>
+  <node name="Cora" sex="f" is_used_before="false">
+  </node>
+  <node name="Kithri" sex="f" is_used_before="false">
+  </node>
+  <node name="Lavinia" sex="f" is_used_before="false">
+  </node>
+  <node name="Lidda" sex="f" is_used_before="false">
+  </node>
+  <node name="Merla" sex="f" is_used_before="false">
+  </node>
+  <node name="Nedda" sex="f" is_used_before="false">
+  </node>
+  <node name="Paela" sex="f" is_used_before="false">
+  </node>
+  <node name="Shaena" sex="f" is_used_before="false">
+  </node>
+  <node name="Vani" sex="f" is_used_before="false">
+  </node>
+  <node name="Verna" sex="f" is_used_before="false">
+  </node>
+</names>

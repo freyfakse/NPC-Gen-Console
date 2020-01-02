@@ -1,77 +1,53 @@
-<?xml version = "1.0"?>
+<?xml version="1.0"?>
 <names>
-	<node name="Ella" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Carolus" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Adelfried" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Ida" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Leopolda" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Conrad" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Frieda" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Adeline" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Dietrich" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Frederick" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Karla" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Lisa" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Humbert" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Norberta" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Leonard" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Ormanda" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Ludwig" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Manfred" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Ella" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Mathias" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Ulrika" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Wanda" sex="f" is_used_before="false">
-	</node>
-
-	<node name="Otto" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Ulbrecht" sex="m" is_used_before="false">
-	</node>
-
-	<node name="Walter" sex="m" is_used_before="false">
-	</node>
+  <node name="Ella" sex="f" is_used_before="false">
+  </node>
+  <node name="Carolus" sex="m" is_used_before="false">
+  </node>
+  <node name="Adelfried" sex="m" is_used_before="false">
+  </node>
+  <node name="Ida" sex="f" is_used_before="false">
+  </node>
+  <node name="Leopolda" sex="f" is_used_before="false">
+  </node>
+  <node name="Conrad" sex="m" is_used_before="false">
+  </node>
+  <node name="Frieda" sex="f" is_used_before="false">
+  </node>
+  <node name="Adeline" sex="f" is_used_before="false">
+  </node>
+  <node name="Dietrich" sex="m" is_used_before="false">
+  </node>
+  <node name="Frederick" sex="m" is_used_before="false">
+  </node>
+  <node name="Karla" sex="f" is_used_before="false">
+  </node>
+  <node name="Lisa" sex="f" is_used_before="false">
+  </node>
+  <node name="Humbert" sex="m" is_used_before="false">
+  </node>
+  <node name="Norberta" sex="f" is_used_before="false">
+  </node>
+  <node name="Leonard" sex="m" is_used_before="false">
+  </node>
+  <node name="Ormanda" sex="f" is_used_before="false">
+  </node>
+  <node name="Ludwig" sex="m" is_used_before="false">
+  </node>
+  <node name="Manfred" sex="m" is_used_before="false">
+  </node>
+  <node name="Ella" sex="f" is_used_before="false">
+  </node>
+  <node name="Mathias" sex="m" is_used_before="false">
+  </node>
+  <node name="Ulrika" sex="f" is_used_before="false">
+  </node>
+  <node name="Wanda" sex="f" is_used_before="false">
+  </node>
+  <node name="Otto" sex="m" is_used_before="false">
+  </node>
+  <node name="Ulbrecht" sex="m" is_used_before="false">
+  </node>
+  <node name="Walter" sex="m" is_used_before="false">
+  </node>
 </names>

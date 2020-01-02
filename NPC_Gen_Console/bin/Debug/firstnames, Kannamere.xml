@@ -4,7 +4,7 @@
   </node>
   <node name="John" sex="m" is_used_before="false">
   </node>
-  <node name="Jacob" sex="m" is_used_before="false">
+  <node name="Jacob" sex="m" is_used_before="true">
   </node>
   <node name="Ethel" sex="f" is_used_before="false">
   </node>
@@ -12,7 +12,7 @@
   </node>
   <node name="Clark" sex="m" is_used_before="false">
   </node>
-  <node name="Nara" sex="f" is_used_before="false">
+  <node name="Nara" sex="f" is_used_before="true">
   </node>
   <node name="Lindsay" sex="f" is_used_before="false">
   </node>
