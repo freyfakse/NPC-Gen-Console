@@ -148,6 +148,7 @@ namespace NPC_Gen_Console
             firstnamesStavroXML.Load("firstnames, Stavro.xml");
             firstnamesZolbonneXML.Load("firstnames, Zolbonne.xml");
             firstnamesUnitedCoast.Load("firstnames, United Coast.xml");
+
             dragonbornFirstnamesXML.Load("dragonborn firstnames, Seamir.xml");
             dwarvenFirstnamesXML.Load("dwarven firstnames, Seamir.xml");
             elvishFirstnamesXML.Load("elven firstnames, Seamir.xml");
@@ -160,6 +161,7 @@ namespace NPC_Gen_Console
             lastnamesStavroXML.Load("lastnames, Stavro.xml");
             lastnamesZolbonneXML.Load("lastnames, Zolbonne.xml");
             lastnamesUnitedCoast.Load("lastnames, United Coast.xml");
+
             dragonbornLastnamesXML.Load("dragonborn lastnames, Seamir.xml");
             dwarvenLastnamesXML.Load("dwarven lastnames, Seamir.xml");
             elvishLastnamesXML.Load("elven lastnames, Seamir.xml");
@@ -206,21 +208,58 @@ namespace NPC_Gen_Console
                 xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
                 xmlDoc.Save("firstnames, Kannamere.xml");
             }
-            else if (li_npcInput3[2].Equals("h"))
+            else if (li_npcInput3[1].Equals("h"))
             {
                 xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
                 xmlDoc.Save("firstnames, Herzamark.xml");
             }
-            else if (li_npcInput3[2].Equals("s"))
+            else if (li_npcInput3[1].Equals("s"))
             {
                 xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
                 xmlDoc.Save("firstnames, Stavro.xml");
             }
-            else if (li_npcInput3[2].Equals("z"))
+            else if (li_npcInput3[1].Equals("z"))
             {
                 xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
                 xmlDoc.Save("firstnames, Zolbonne.xml");
             }
+            else if (li_npcInput3[1].Equals("u"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("firstnames, United Coast.xml");
+            }
+            else if (li_npcInput3[1].Equals("dr"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("dragonborn firstnames, Seamir.xml");
+            }
+            else if (li_npcInput3[1].Equals("dw"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("dwarven firstnames, Seamir.xml");
+            }
+            else if (li_npcInput3[1].Equals("el"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("elven firstnames, Seamir.xml");
+            }
+            else if (li_npcInput3[1].Equals("gn"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("gnomish firstnames, Seamir.xml");
+            }
+            else if (li_npcInput3[1].Equals("ha"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("halfling firstnames, Seamir.xml");
+            }
+            else if (li_npcInput3[1].Equals("or"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("orcish firstnames, Seamir.xml");
+            }
+            else
+                Console.WriteLine("ERROR: Couldn't save first name");
         }
 
         public void SaveLastname(XmlDocument xmlDoc,List<String> li_npcInput4)
@@ -245,6 +284,38 @@ namespace NPC_Gen_Console
                 xmlDoc.DocumentElement.ChildNodes[i_selectedLastnameNode].Attributes["is_used_before"].Value = "true";
                 xmlDoc.Save("lastnames, Zolbonne.xml");
             }
+            else if (li_npcInput4[2].Equals("u"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedLastnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("lastnames, United Coast.xml");
+            }
+            else if (li_npcInput4[2].Equals("dr"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedLastnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("dragonborn lastnames, Seamir.xml");
+            }
+            else if (li_npcInput4[2].Equals("dw"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedLastnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("dwarven lastnames, Seamir.xml");
+            }
+            else if (li_npcInput4[2].Equals("el"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedLastnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("elven lastnames, Seamir.xml");
+            }
+            else if (li_npcInput4[2].Equals("gn"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedLastnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("gnomish lastnames, Seamir.xml");
+            }
+            else if (li_npcInput4[2].Equals("ha"))
+            {
+                xmlDoc.DocumentElement.ChildNodes[i_selectedLastnameNode].Attributes["is_used_before"].Value = "true";
+                xmlDoc.Save("halfling lastnames, Seamir.xml");
+            }
+            else
+                Console.WriteLine("ERROR: Couldn't save last name");
         }
 
         public Boolean PickFirstname(XmlDocument xmlDoc, String str_sex)//returns bool due to sex & availability checking

@@ -30,7 +30,7 @@
   </node>
   <node name="Newell" sex="m" is_used_before="false">
   </node>
-  <node name="Irving" sex="m" is_used_before="false">
+  <node name="Irving" sex="m" is_used_before="true">
   </node>
   <node name="Brock" sex="m" is_used_before="false">
   </node>
@@ -43,5 +43,7 @@
   <node name="Edith" sex="f" is_used_before="false">
   </node>
   <node name="Brigham" sex="m" is_used_before="false">
+  </node>
+  <node name="Gavin" sex="m" is_used_before="false">
   </node>
 </names>
