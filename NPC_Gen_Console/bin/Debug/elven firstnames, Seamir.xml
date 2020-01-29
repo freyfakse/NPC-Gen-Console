@@ -32,7 +32,7 @@
   </node>
   <node name="Laucian" sex="m" is_used_before="false">
   </node>
-  <node name="Mindartis" sex="m" is_used_before="false">
+  <node name="Mindartis" sex="m" is_used_before="true">
   </node>
   <node name="Paelias" sex="m" is_used_before="false">
   </node>
@@ -44,7 +44,7 @@
   </node>
   <node name="Soveliss" sex="m" is_used_before="false">
   </node>
-  <node name="Thamior" sex="m" is_used_before="false">
+  <node name="Thamior" sex="m" is_used_before="true">
   </node>
   <node name="Tharivol" sex="m" is_used_before="false">
   </node>
@@ -70,7 +70,7 @@
   </node>
   <node name="Ielenia" sex="f" is_used_before="false">
   </node>
-  <node name="Jelenneth" sex="f" is_used_before="false">
+  <node name="Jelenneth" sex="f" is_used_before="true">
   </node>
   <node name="Leshanna" sex="f" is_used_before="false">
   </node>
@@ -82,7 +82,7 @@
   </node>
   <node name="Naivara" sex="f" is_used_before="false">
   </node>
-  <node name="Quelenna" sex="f" is_used_before="false">
+  <node name="Quelenna" sex="f" is_used_before="true">
   </node>
   <node name="Quillathe" sex="f" is_used_before="false">
   </node>

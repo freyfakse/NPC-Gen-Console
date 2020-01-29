@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <names>
-  <node name="Amakiir (Gemflower)" is_used_before="false">
+  <node name="Amakiir (Gemflower)" is_used_before="true">
   </node>
   <node name="Amastacia (Starflower)" is_used_before="false">
   </node>
   <node name="Holimion (Diamonddew)" is_used_before="false">
   </node>
-  <node name="Ilphelkiir (Gemblossom)" is_used_before="false">
+  <node name="Ilphelkiir (Gemblossom)" is_used_before="true">
   </node>
   <node name="Liadon (Silverfrond)" is_used_before="false">
   </node>
   <node name="Naïlo (Nightbreeze)" is_used_before="false">
   </node>
-  <node name="Siannodel (Moonbrook)" is_used_before="false">
+  <node name="Siannodel (Moonbrook)" is_used_before="true">
   </node>
   <node name="Xiloscient (Goldpetal)" is_used_before="false">
   </node>

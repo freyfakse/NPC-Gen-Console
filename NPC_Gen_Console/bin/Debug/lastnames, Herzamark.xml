@@ -30,7 +30,7 @@
   </node>
   <node name="Rohland" is_used_before="false">
   </node>
-  <node name="Oesterling" is_used_before="false">
+  <node name="Oesterling" is_used_before="true">
   </node>
   <node name="Nehring" is_used_before="false">
   </node>

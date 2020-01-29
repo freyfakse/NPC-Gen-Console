@@ -16,9 +16,9 @@
   </node>
   <node name="Adeline" sex="f" is_used_before="false">
   </node>
-  <node name="Dietrich" sex="m" is_used_before="false">
+  <node name="Dietrich" sex="m" is_used_before="true">
   </node>
-  <node name="Frederick" sex="m" is_used_before="false">
+  <node name="Frederick" sex="m" is_used_before="true">
   </node>
   <node name="Karla" sex="f" is_used_before="false">
   </node>

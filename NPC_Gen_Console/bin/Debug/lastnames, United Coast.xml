@@ -8,13 +8,13 @@
   </node>
   <node name="Thompson" is_used_before="false">
   </node>
-  <node name="Franklin" is_used_before="false">
+  <node name="Franklin" is_used_before="true">
   </node>
-  <node name="Jenkins" is_used_before="false">
+  <node name="Jenkins" is_used_before="true">
   </node>
   <node name="Simmons" is_used_before="false">
   </node>
-  <node name="Campbell" is_used_before="false">
+  <node name="Campbell" is_used_before="true">
   </node>
   <node name="Bryant" is_used_before="false">
   </node>
@@ -22,7 +22,7 @@
   </node>
   <node name="Parker" is_used_before="false">
   </node>
-  <node name="Clark" is_used_before="false">
+  <node name="Clark" is_used_before="true">
   </node>
   <node name="King" is_used_before="false">
   </node>
@@ -30,7 +30,7 @@
   </node>
   <node name="Black" is_used_before="false">
   </node>
-  <node name="Coleman" is_used_before="false">
+  <node name="Coleman" is_used_before="true">
   </node>
   <node name="Henderson" is_used_before="false">
   </node>
