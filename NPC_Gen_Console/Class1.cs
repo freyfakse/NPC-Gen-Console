@@ -37,6 +37,7 @@ namespace NPC_Gen_Console
         int selectedFirstnameNode;
         int selectedLastnameNode;
         //int stepCount = 0; //"state machine", ensures program doesn't continue before each step is correct.
+        Random rng = new Random();
 
         enum stateMachine
         {
@@ -97,6 +98,7 @@ namespace NPC_Gen_Console
                     else if (npcInput[2].Equals("el")) { pointerLastname = elvishLastnamesXML; }
                     else if (npcInput[2].Equals("gn")) { pointerLastname = gnomishLastnamesXML; }
                     else if (npcInput[2].Equals("ha")) { pointerLastname = halflingLastnamesXML; }
+                    //else if (npcInput[2].Equals("or")) { Console.WriteLine("No orcish last names"); }
 
                     //stepCount = 1;
                     state = stateMachine.inputNameState;
@@ -146,9 +148,9 @@ namespace NPC_Gen_Console
 
         public int RandomInt(int size)
         {
-            Random rng = new Random();
+            
             int i_randomInt = rng.Next(0, size);
-            Thread.Sleep(100);
+            //Thread.Sleep(100);
             return i_randomInt;
         }
 
@@ -192,7 +194,7 @@ namespace NPC_Gen_Console
             }
             else if (userSaveInput.Equals("yn"))//save first name
             {
-                Console.WriteLine("Saving fistname.");
+                Console.WriteLine("Saving firstname.");
                 SaveFirstname(firstName, npcInput2);
                 Console.WriteLine("Saved!");
                 return true;
