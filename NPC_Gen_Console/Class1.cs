@@ -131,15 +131,15 @@ namespace NPC_Gen_Console
             {
                 if (input[0] == "m" || input[0] == "f")
                 {
-                    if (input[1] == "k" || input[1] == "h" || input[1] == "s" || input[1] == "z" || input[1] == "u" || input[1] == "dr" || input[1] == "dw" || input[1] == "el" || input[1] == "gn" || input[1] == "ha" || input[1] == "or")
+                    if (input[1] == "k" || input[1] == "h" || input[1] == "p" || input[1] == "z" || input[1] == "u" || input[1] == "dr" || input[1] == "dw" || input[1] == "el" || input[1] == "gn" || input[1] == "ha" || input[1] == "or")
                     {
-                        if (input[2] == "k" || input[2] == "h" || input[2] == "s" || input[2] == "z" || input[2] == "u" || input[2] == "dr" || input[2] == "dw" || input[2] == "el" || input[2] == "gn" || input[2] == "ha")
+                        if (input[2] == "k" || input[2] == "h" || input[2] == "p" || input[2] == "z" || input[2] == "u" || input[2] == "dr" || input[2] == "dw" || input[2] == "el" || input[2] == "gn" || input[2] == "ha")
                         {
                             return true;
                         }
-                        else { Console.WriteLine("Invalid surname origin, type (k)annamere, (h)erzamark, (s)tavro, (z)olbonne, (u)nited coast, (dr)agonborn, (dw)arf, (el)ven, (gn)omish, (ha)lfling, & (or)cish."); return false; }
+                        else { Console.WriteLine("Invalid surname origin, type (k)annamere, (h)erzamark, (p)olya, (z)olbonne, (u)nited coast, (dr)agonborn, (dw)arf, (el)ven, (gn)omish, (ha)lfling, & (or)cish."); return false; }
                     }
-                    else { Console.WriteLine("Invalid firstname origin, type (k)annamere, (h)erzamark, (s)tavro, (z)olbonne, (u)nited coast, (dr)agonborn, (dw)arf, (el)ven, (gn)omish, & (ha)lfling."); return false; }
+                    else { Console.WriteLine("Invalid firstname origin, type (k)annamere, (h)erzamark, (p)olya, (z)olbonne, (u)nited coast, (dr)agonborn, (dw)arf, (el)ven, (gn)omish, & (ha)lfling."); return false; }
                 }
                 else { Console.WriteLine("Invalid sex, type 'm' or 'f'."); return false; }
             }
