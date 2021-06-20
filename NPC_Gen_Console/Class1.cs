@@ -78,7 +78,7 @@ namespace NPC_Gen_Console
                 {
                     if (npcInput[1].Equals("k")) { pointerFirstname = firstnamesKannamereXML; }
                     else if (npcInput[1].Equals("h")) { pointerFirstname = firstnamesHerzamarkXML; }
-                    else if (npcInput[1].Equals("s")) { pointerFirstname = firstnamesStavroXML; }
+                    else if (npcInput[1].Equals("p")) { pointerFirstname = firstnamesStavroXML; }
                     else if (npcInput[1].Equals("z")) { pointerFirstname = firstnamesZolbonneXML; }
                     else if (npcInput[1].Equals("u")) { pointerFirstname = firstnamesUnitedCoast; }
                     else if (npcInput[1].Equals("dr")) { pointerFirstname = dragonbornFirstnamesXML; }
@@ -90,7 +90,7 @@ namespace NPC_Gen_Console
 
                     if (npcInput[2].Equals("k")) { pointerLastname = lastnamesKannamereXML; }
                     else if (npcInput[2].Equals("h")) { pointerLastname = lastnamesHerzamarkXML; }
-                    else if (npcInput[2].Equals("s")) { pointerLastname = lastnamesStavroXML; }
+                    else if (npcInput[2].Equals("p")) { pointerLastname = lastnamesStavroXML; }
                     else if (npcInput[2].Equals("z")) { pointerLastname = lastnamesZolbonneXML; }
                     else if (npcInput[2].Equals("u")) { pointerLastname = lastnamesUnitedCoast; }
                     else if (npcInput[2].Equals("dr")) { pointerLastname = dragonbornLastnamesXML; }
@@ -226,7 +226,7 @@ namespace NPC_Gen_Console
                 xmlDoc.DocumentElement.ChildNodes[selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
                 xmlDoc.Save("firstnames, Herzamark.xml");
             }
-            else if (npcInput3[1].Equals("s"))
+            else if (npcInput3[1].Equals("p"))
             {
                 xmlDoc.DocumentElement.ChildNodes[selectedFirstnameNode].Attributes["is_used_before"].Value = "true";
                 xmlDoc.Save("firstnames, Stavro.xml");
@@ -287,7 +287,7 @@ namespace NPC_Gen_Console
                 xmlDoc.DocumentElement.ChildNodes[selectedLastnameNode].Attributes["is_used_before"].Value = "true";
                 xmlDoc.Save("lastnames, Herzamark.xml");
             }
-            else if (npcInput4[2].Equals("s"))
+            else if (npcInput4[2].Equals("p"))
             {
                 xmlDoc.DocumentElement.ChildNodes[selectedLastnameNode].Attributes["is_used_before"].Value = "true";
                 xmlDoc.Save("lastnames, Stavro.xml");

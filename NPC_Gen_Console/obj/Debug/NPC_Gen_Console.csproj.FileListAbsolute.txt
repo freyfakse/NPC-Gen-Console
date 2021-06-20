@@ -12,3 +12,10 @@ C:\Users\Jonas\Documents\Github\Projects\NPC-Gen-Console\NPC_Gen_Console\obj\Deb
 C:\Users\Jonas\Documents\Github\Projects\NPC-Gen-Console\NPC_Gen_Console\bin\Debug\NPC_Gen_Console.exe.config
 C:\Users\Jonas\Documents\Github\Projects\NPC-Gen-Console\NPC_Gen_Console\bin\Debug\NPC_Gen_Console.exe
 C:\Users\Jonas\Documents\Github\Projects\NPC-Gen-Console\NPC_Gen_Console\bin\Debug\NPC_Gen_Console.pdb
+D:\Backup\Github\Seamir character gen\NPC-Gen-Console\NPC_Gen_Console\bin\Debug\NPC_Gen_Console.exe.config
+D:\Backup\Github\Seamir character gen\NPC-Gen-Console\NPC_Gen_Console\bin\Debug\NPC_Gen_Console.exe
+D:\Backup\Github\Seamir character gen\NPC-Gen-Console\NPC_Gen_Console\bin\Debug\NPC_Gen_Console.pdb
+D:\Backup\Github\Seamir character gen\NPC-Gen-Console\NPC_Gen_Console\obj\Debug\NPC_Gen_Console.csproj.AssemblyReference.cache
+D:\Backup\Github\Seamir character gen\NPC-Gen-Console\NPC_Gen_Console\obj\Debug\NPC_Gen_Console.csproj.CoreCompileInputs.cache
+D:\Backup\Github\Seamir character gen\NPC-Gen-Console\NPC_Gen_Console\obj\Debug\NPC_Gen_Console.exe
+D:\Backup\Github\Seamir character gen\NPC-Gen-Console\NPC_Gen_Console\obj\Debug\NPC_Gen_Console.pdb
